@@ -1,7 +1,7 @@
 # Spectral-Ranking-for-Abnormality
 
 ##Example1
-#######load libraries
+######load libraries
 library(kernlab)
 library(ggplot2)
 #######load data
