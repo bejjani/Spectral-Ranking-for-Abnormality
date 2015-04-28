@@ -1,5 +1,8 @@
 # Spectral-Ranking-for-Abnormality
 
+S080052_RETENUE_SADC_EXP_SP and S800014_PARALLEL_SADC_EXP_FNC are PL/SQL code to write an Oracle table to disk in parallel using pipeline parallelized feature. These scripts are not related to the Anomaly detection and are just uploaded in this repository temporarily.
+
+
 ##Example1
 ######load libraries
 library(kernlab)
