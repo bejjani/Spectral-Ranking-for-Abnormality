@@ -1,24 +1,18 @@
 # Spectral-Ranking-for-Abnormality
 
-########################################################################################################################################
-########################################################################################################################################
-##########################                                    EXAMPLES                                        ##########################
-########################################################################################################################################
-########################################################################################################################################
-
-#Example1
-#load libraries
+##Example1
+###load libraries
 library(kernlab)
 library(ggplot2)
-#load data
+###load data
 data(promotergene)
-#transform numeric data to categorical data
+###transform numeric data to categorical data
 df=as.data.frame(sapply(promotergene[,-1],catcalinhara))
-#compute hamming distance kernel matrix
+###compute hamming distance kernel matrix
 hammingkernelMatrix = hammingkernel2(df,lambda = .6)
-#Perform spectral ranking 
+###Perform spectral ranking 
 SpectralAnomaly = sra(hammingkernelMatrix, Xi = .4)
-#plot
+###plot
 g = ggplot(SpectralAnomaly$EigenSpace,aes(x=np_Eigenvector_1, y = np_Eigenvector_2,color=ifelse(sign(SpectralAnomaly$Anomaly)==-1,1,SpectralAnomaly$Anomaly+1))) + geom_point() + scale_color_gradient("Anomaly",trans="log",low="blue",high="red")
 g = g + ggtitle(paste("mFLAG= ",SpectralAnomaly$mFLAG))
 g = g + theme(legend.title = element_text(face="plain"), legend.text = element_text(color = "white"))
