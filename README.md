@@ -1,7 +1,7 @@
 # Spectral-Ranking-for-Abnormality
 
 Implementation of the Spectral Ranking for Abnormality (SRA) algorithm as described in the paper
-K. Nian, H. Zhang, A. Tayal, T. F. Coelman, Y. Li, (2014) 'Auto Insurnace Fraud Detection Using Unsupervised Spectral Ranking for Anomaly
+K. Nian, H. Zhang, A. Tayal, T. F. Coelman, Y. Li, (2014) 'Unsupervised Spectral Ranking for Anomaly and Application to Auto Insurance Fraud Detection'
 
 ##Example1
 ######load libraries
